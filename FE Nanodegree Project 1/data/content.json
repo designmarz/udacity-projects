@@ -1,6 +1,6 @@
 {
-  "1": ["Lorem header text", "assets/42.jpg","Ipsum Footer text"],
-  "2": ["Lorem header text", "assets/42.jpg","Ipsum Footer text"],
-  "3": ["Lorem header text", "assets/42.jpg","Ipsum Footer text"],
-  "4": ["Lorem header text", "assets/42.jpg","Ipsum Footer text"]
+  "project1": ["Lorem header text","Ipsum Footer text","assets/42.jpg"],
+  "project2": ["Lorem header text","Ipsum Footer text","assets/42.jpg"],
+  "project3": ["Lorem header text","Ipsum Footer text","assets/42.jpg"],
+  "project4": ["Lorem header text","Ipsum Footer text","assets/42.jpg"]
 }
