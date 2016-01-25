@@ -16,10 +16,20 @@ body {
 .divider-color         { border-color: #B6B6B6; }
 /* Colors */
 
+/* Bootstrap overides */
 .square{
     border-radius: 0 !important;
 }
+/* Bootstrap overides */
 
+
+
+#header-row {
+    min-height: 300px;
+    overflow: hidden;
+    background: url("../assets/hero.jpg");
+    background-size: cover;
+}
 /* Gallery Styling */
 article.gallery_image {
     /*padding: 1rem;*/
