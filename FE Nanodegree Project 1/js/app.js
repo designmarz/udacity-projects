@@ -18,9 +18,9 @@ $(document).ready(function() {
 			// console.log("------ Loop End -----");
 			html += "<article class='gallery_image'>";
 			html += "<header><h1 class='primary-text-color'>" + val[0] + "</h1></header>";
-			// html += "<a href='#' class=''>";
+			html += "<a href='#' class='img-link'>";
 			html += "<img src='" + val[2] + "' id='"+key+"' class='img-responsive'alt='"+val+"'>";
-			// html += "</a>";
+			html += "</a>";
 			html += "<footer><p class='secondary-text-color'>" + val[1] + "</p></footer>";
 			// close row
 			html += "</article>";		
@@ -31,18 +31,25 @@ $(document).ready(function() {
 		// owl-carousel Start //
 
 		$('.owl-carousel').owlCarousel({
-			    animateOut: 'slideOutDown',
-			    animateIn: 'flipInX',
-			    items:2,
-			    margin:10,
+			   animateOut: 'fadeOut',
+			    items:5,
+			    margin:30,
 			    stagePadding:30,
 			    smartSpeed:450
 			});
+
+		$( ".img-link" ).click(function( event ) {
+		  event.preventDefault();
+		  console.log(this);
+		});
 
 		// owl-carousel End //
 
 		console.log("JSON Loaded");
 	}); // End JSON data //
+
+
+
 
 console.log("Doc Loaded");
 });
