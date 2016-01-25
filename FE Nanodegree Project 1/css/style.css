@@ -22,15 +22,38 @@ body {
 .square{
     border-radius: 0 !important;
 }
+body {
+    padding-top: 0px;
+}
+
+.navbar {
+    min-height: 50px;
+    margin-bottom: 0px;
+}
 /* Bootstrap overides */
 
-section {
-    min-height: 100vh;
-}
+/* Utilities */
 .bold {
     font-weight: bold;
 }
 
+.shadow {
+    text-shadow: 1px 1px 1px #000;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+/* Utilities */
+
+section {
+    min-height: 50vh;
+}
 .nav-ion {
     font-size: 3rem;
 }
