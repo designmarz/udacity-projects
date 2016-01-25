@@ -13,6 +13,8 @@ body {
 .accent-color          { background: #FF4081; }
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #727272; }
+.darkblue-text-color    { color: #0288D1; }
+.blue-text-color { color: #03A9F4; }
 .divider-color         { border-color: #B6B6B6; }
 /* Colors */
 
@@ -22,7 +24,20 @@ body {
 }
 /* Bootstrap overides */
 
+.bold {
+    font-weight: bold;
+}
 
+.nav-ion {
+    font-size: 3rem;
+}
+
+vr {
+    border-left: 1px solid #000;
+    padding: 8px 5px 0px 5px;
+    margin-left: 3px;
+    font-size: 2rem;
+}
 
 #header-row {
     min-height: 300px;
@@ -31,13 +46,25 @@ body {
     background-size: cover;
 }
 /* Gallery Styling */
+
+
+article h1:after {
+    background-color: black;
+    position: absolute;
+    bottom: -4px;
+    height: 1px;
+    content: '';
+    width: 75px;
+    display: block;
+}
+
 article.gallery_image {
     /*padding: 1rem;*/
-    border: 1px solid;
+    /*border: 1px solid;*/
 }
 article.gallery_image:hover {
     /*padding: 0.8rem;*/
-    background-color: gray;
+    /*background-color: gray;*/
 }
 
 article header h1 {
