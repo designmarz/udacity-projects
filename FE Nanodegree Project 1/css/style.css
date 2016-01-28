@@ -1,27 +1,57 @@
 body {
-	font-size: 10px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    font-size: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Colors */
-.dark-primary-color    { background: #0288D1; }
-.default-primary-color { background: #03A9F4; }
-.light-primary-color   { background: #B3E5FC; }
-.text-primary-color    { color: #FFFFFF; }
-.accent-color          { background: #FF4081; }
-.primary-text-color    { color: #212121; }
-.secondary-text-color  { color: #727272; }
-.darkblue-text-color    { color: #0288D1; }
-.blue-text-color { color: #03A9F4; }
-.divider-color         { border-color: #B6B6B6; }
+.dark-primary-color {
+    background: #0288D1;
+}
+
+.default-primary-color {
+    background: #03A9F4;
+}
+
+.light-primary-color {
+    background: #B3E5FC;
+}
+
+.text-primary-color {
+    color: #FFFFFF;
+}
+
+.accent-color {
+    background: #FF4081;
+}
+
+.primary-text-color {
+    color: #212121;
+}
+
+.secondary-text-color {
+    color: #727272;
+}
+
+.darkblue-text-color {
+    color: #0288D1;
+}
+
+.blue-text-color {
+    color: #03A9F4;
+}
+
+.divider-color {
+    border-color: #B6B6B6;
+}
 /* Colors */
 
 /* Bootstrap overides */
-.square{
+.square {
     border-radius: 0 !important;
 }
+
 body {
     padding-top: 0px;
 }
@@ -41,32 +71,24 @@ body {
     text-shadow: 1px 1px 1px #000;
 }
 
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
-}
-
+/*.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}*/
 /* Utilities */
 
 section {
-    min-height: 50vh;
+    /*min-height: 30vh;*/
 }
+
 .nav-ion {
     font-size: 3rem;
 }
 
-vr {
-    border-left: 1px solid #000;
-    padding: 8px 5px 0px 5px;
-    margin-left: 3px;
-    font-size: 2rem;
-}
-
 #header-row {
-    min-height: 300px;
+    min-height: 10vh;
     overflow: hidden;
     background: url("../assets/hero.jpg");
     background-size: cover;
@@ -75,23 +97,20 @@ vr {
 
 
 article h1:after {
-    background-color: black;
-    position: absolute;
     bottom: -4px;
     height: 1px;
-    content: '';
     width: 75px;
-    display: block;
 }
 
-article.gallery_image {
-    /*padding: 1rem;*/
-    /*border: 1px solid;*/
+/*article.gallery_image img {
+    padding: 2rem;
+    transition: 1s all ease;
 }
-article.gallery_image:hover {
-    /*padding: 0.8rem;*/
-    /*background-color: gray;*/
-}
+
+article.gallery_image img:hover {
+    padding: 2rem 3rem 3rem 2rem;
+    background-color: gray;;
+}*/
 
 article header h1 {
     font-size: 1.4rem;
@@ -102,6 +121,6 @@ article footer p {
 }
 /* Gallery Styling */
 
-.owl-item.animated {
+/*.owl-item.animated {
     visibility: visible;
-}
+}*/
