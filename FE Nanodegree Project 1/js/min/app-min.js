@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".owl-carousel").owlCarousel({animateOut:"fadeOut",items:3,margin:30,stagePadding:30,smartSpeed:450}),$(".img-link").click(function(e){e.preventDefault()})});

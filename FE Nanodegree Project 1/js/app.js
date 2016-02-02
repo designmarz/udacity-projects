@@ -2,11 +2,11 @@
 $(document).ready(function() {
 
 	$('.owl-carousel').owlCarousel({
-	   animateOut: 'fadeOut',
-	    items:3,
-	    margin:30,
+	   animateOut: 'flipInX',
+	    items:2,
+	    margin:60,
 	    stagePadding:30,
-	    smartSpeed:450
+	    smartSpeed:5450
 	});
 
 	$( ".img-link" ).click(function( event ) {
