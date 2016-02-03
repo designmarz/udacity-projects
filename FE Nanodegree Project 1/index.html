@@ -11,121 +11,124 @@
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>  
-    <nav class="navbar navbar-default">
+<body>
+    <div class="navbar navbar-default navbar-static-top">
         <div class="container">
-            <div class="navbar-right">
-                <div class="pull-right">
-                    <a href="http://www.twitter.com/" class="nav-ion">
-                        <i class="ion-social-twitter"></i>
-                    </a>
-                    <a href="http://www.twitter.com/" class="nav-ion">
-                        <i class="ion-social-linkedin"></i>
-                    </a>
-                </div>
-                <h1>Nick Marazzo</h1>
-                <p>Front-End Developer</p>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#"><span>Nick Marazzo</span><br>Front-End Developer</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="http://www.github.com/" class="nav-ion"><i class="ion-social-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com/" class="nav-ion"><i class="ion-social-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.linkedin.com/" class="nav-ion"><i class="ion-social-linkedin"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </nav>
+    </div>
+<!-- _______  -->
+<div id="fullpage">
 
-    <section id="landing" class="container-fluid">
+    <section id="landing" class="container-fluid section">
         <div class="row" id="header-row">
             <div class="col-xs-10 col-sm-8  col-xs-offset-1 col-sm-offset-2">
-                <h1 class="text-primary-color bold shadow">Former pixel pushing graphic designer, now front-end developer</h1>
+                <h3 id="hero-text" class="text-primary-color bold shadow-1 vertical">Former pixel pushing graphic designer, now front-end developer</h3>
             </div>
         </div>
     </section>
 
-    <!-- <section id="about" class="container">
+    <section id="gallery" class="gallery container section">
         <div class="row">
             <div class="col-sm-10 col-offset-sm-1">
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ullam optio, architecto minima, impedit dolorem, non, cupiditate eius molestias tempore ipsum repudiandae! Esse fuga ex accusamus, earum non quasi quos.</p>
-            </div>
-        </div>
-    </section> -->
-
-    <section id="gallery" class="gallery container">
-        <div class="row">
-            <div class="col-sm-10 col-offset-sm-1">
-                <h1>projects</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ullam optio, architecto minima, impedit dolorem, non, cupiditate eius molestias tempore ipsum repudiandae! Esse fuga ex accusamus, earum non quasi quos.</p>
+                <h1>Featured Work</h1>
             </div>
         </div>
         <div class="row owl-carousel">
             <article class="gallery_image">
                 <header>
-                    <h1 class="primary-text-color">Project Title</h1>
+                    <h2 class="primary-text-color">Project Title</h2>
                 </header>
                 <a href="#" class="img-link">
-                    <img src="assets/slide.jpg" id="project2" class="img-responsive" alt="Project Title,Ipsum Footer text,assets/slide.jpg"></a>
+                    <img src="assets/slide.jpg" id="project1" class="img-responsive" alt="Project Description should go here"></a>
                 <footer>
-                    <p class="secondary-text-color">Ipsum Footer text</p>
+                    <a href="#" class="secondary-text-color">http://www.github.com/someproject</a>
                 </footer>
             </article>
 
             <article class="gallery_image">
                 <header>
-                    <h1 class="primary-text-color">Project Title</h1>
+                    <h2 class="primary-text-color">Project Title</h2>
                 </header>
                 <a href="#" class="img-link">
-                    <img src="assets/slide.jpg" id="project2" class="img-responsive" alt="Project Title,Ipsum Footer text,assets/slide.jpg"></a>
+                    <img src="assets/slide.jpg" id="project2" class="img-responsive" alt="Project Description should go here"></a>
                 <footer>
-                    <p class="secondary-text-color">Ipsum Footer text</p>
+                    <a href="#" class="secondary-text-color">http://www.github.com/someproject</a>
                 </footer>
             </article>
 
             <article class="gallery_image">
                 <header>
-                    <h1 class="primary-text-color">Project Title</h1>
+                    <h2 class="primary-text-color">Project Title</h2>
                 </header>
                 <a href="#" class="img-link">
-                    <img src="assets/slide.jpg" id="project2" class="img-responsive" alt="Project Title,Ipsum Footer text,assets/slide.jpg"></a>
+                    <img src="assets/slide.jpg" id="project3" class="img-responsive" alt="Project Description should go here"></a>
                 <footer>
-                    <p class="secondary-text-color">Ipsum Footer text</p>
+                    <a href="#" class="secondary-text-color">http://www.github.com/someproject</a>
                 </footer>
             </article>
 
             <article class="gallery_image">
                 <header>
-                    <h1 class="primary-text-color">Project Title</h1>
+                    <h2 class="primary-text-color">Project Title</h2>
                 </header>
                 <a href="#" class="img-link">
-                    <img src="assets/slide.jpg" id="project2" class="img-responsive" alt="Project Title,Ipsum Footer text,assets/slide.jpg"></a>
+                    <img src="assets/slide.jpg" id="project4" class="img-responsive" alt="Project Description should go here"></a>
                 <footer>
-                    <p class="secondary-text-color">Ipsum Footer text</p>
+                    <a href="#" class="secondary-text-color">http://www.github.com/someproject</a>
                 </footer>
             </article>
 
             <article class="gallery_image">
                 <header>
-                    <h1 class="primary-text-color">Project Title</h1>
+                    <h2 class="primary-text-color">Project Title</h2>
                 </header>
                 <a href="#" class="img-link">
-                    <img src="assets/slide.jpg" id="project2" class="img-responsive" alt="Project Title,Ipsum Footer text,assets/slide.jpg"></a>
+                    <img src="assets/slide.jpg" id="project5" class="img-responsive" alt="Project Description should go here"></a>
                 <footer>
-                    <p class="secondary-text-color">Ipsum Footer text</p>
+                    <a href="#" class="secondary-text-color">http://www.github.com/someproject</a>
                 </footer>
             </article>
 
             <article class="gallery_image">
                 <header>
-                    <h1 class="primary-text-color">Project Title</h1>
+                    <h2 class="primary-text-color">Project Title</h2>
                 </header>
                 <a href="#" class="img-link">
-                    <img src="assets/slide.jpg" id="project2" class="img-responsive" alt="Project Title,Ipsum Footer text,assets/slide.jpg"></a>
+                    <img src="assets/slide.jpg" id="project6" class="img-responsive" alt="Project Description should go here"></a>
                 <footer>
-                    <p class="secondary-text-color">Ipsum Footer text</p>
+                    <a href="#" class="secondary-text-color">http://www.github.com/someproject</a>
                 </footer>
             </article>
         </div>
     </section>
-
+</div>
     <footer class="container-fluid">
         <p>NM Copyright &copy; 2016</p>
     </footer>
@@ -134,7 +137,7 @@
     <script src="js/vendor/jquery-2.1.4.min.js"></script>
     <script src="js/vendor/bootstrap.js"></script>
     <script src="owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/vendor/parallax.js"></script>
+    <script src="js/vendor/jquery.fullPage.js"></script>
     <!-- Vendor JS -->
 
     <script src="js/app.js"></script>

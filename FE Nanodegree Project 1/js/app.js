@@ -14,4 +14,13 @@ $(document).ready(function() {
 	  // Future: add dialog box popup or modal
 	});
 
+	var key_typer = function(divID) {
+		var id = document.getElementById(divID);
+		var text = id.innerHTML;
+		console.log(text);
+		return text;		
+	};
+
+key_typer('hero-text');
+$('#fullpage').fullpage();
 });

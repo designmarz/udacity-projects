@@ -67,29 +67,55 @@ body {
     font-weight: bold;
 }
 
-.shadow {
+.shadow-1 {
     text-shadow: 1px 1px 1px #000;
+}
+
+.shadow-2 {
+    text-shadow: 2px 2px 2px #000;
+}
+
+.shadow-3 {
+    text-shadow: 3px 3px 3px #000;
+}
+
+.vertical {
+   height: 90px;
+   width: 270px;
+   background: #000;
+   font-size: 48px;
+   font-style: oblique;
+   color: #FFF;
+   text-align: center;
+   margin-top: 20px;
+   margin-left: 5px;
+   display: table-cell;
+   vertical-align: middle;
 }
 /* Utilities */
 
 section {
-    /*min-height: 30vh;*/
-/*  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;*/
+    /*min-height: 90vh;*/
+}
 
+
+
+
+.navbar-header {
+    height: 7rem;
 }
 
 .nav-ion {
-    font-size: 3rem;
+    /*font-size: 3rem;*/
 }
 
 #header-row {
-    min-height: 10vh;
+    /*min-height: 90vh;*/  
+    margin-top: 3rem 
     overflow: hidden;
     background: url("../assets/hero.jpg");
     background-size: cover;
+    /*line-height: 100px;*/
 }
 
 /* Gallery Styling */
@@ -107,7 +133,3 @@ article footer p {
     font-size: 2rem;
 }
 /* Gallery Styling */
-
-/*.owl-item.animated {
-    visibility: visible;
-}*/
