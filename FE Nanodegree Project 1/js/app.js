@@ -1,26 +1,36 @@
-/* jshint undef: true, unused: true, devel: true */
 $(document).ready(function() {
 
-	$('.owl-carousel').owlCarousel({
-	   animateOut: 'flipInX',
-	    items:2,
-	    margin:60,
-	    stagePadding:30,
-	    smartSpeed:5450
-	});
+  $('.owl-carousel').owlCarousel({
+    animateOut: 'flipInX',
+    items:2,
+    margin:60,
+    stagePadding:30,
+    smartSpeed:5450
+  });
 
-	$( ".img-link" ).click(function( event ) {
-	  event.preventDefault();
-	  // Future: add dialog box popup or modal
-	});
+  $( ".img-link, .gallery_image footer a" ).click(function(e) {
+    e.preventDefault();
+// TODO: add lightbox popup
+});
 
-	var key_typer = function(divID) {
-		var id = document.getElementById(divID);
-		var text = id.innerHTML;
-		console.log(text);
-		return text;		
-	};
+  var id = document.getElementById('hero-text');
+  var heroText = id.innerText;
+  var blank = "";
 
-key_typer('hero-text');
-$('#fullpage').fullpage();
+  var key_typer = function(i, time) {
+    var i = i || 0;
+    time = Math.floor(Math.random() * 200) + 10;
+    if (heroText === blank) {
+      return
+    } else {
+      blank += heroText[i];
+      id.innerText = blank;
+      i++
+      setTimeout(function(){
+       key_typer(i);
+     }, time);
+    }
+  };
+
+  key_typer(0, 10);
 });

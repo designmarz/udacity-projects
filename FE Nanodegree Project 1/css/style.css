@@ -60,6 +60,10 @@ body {
     min-height: 50px;
     margin-bottom: 0px;
 }
+
+.breadcrumb > li:hover {
+    padding: 20px 100px 24px 0;
+}
 /* Bootstrap overides */
 
 /* Utilities */
@@ -80,42 +84,26 @@ body {
 }
 
 .vertical {
-   height: 90px;
-   width: 270px;
-   background: #000;
-   font-size: 48px;
-   font-style: oblique;
-   color: #FFF;
-   text-align: center;
-   margin-top: 20px;
-   margin-left: 5px;
-   display: table-cell;
-   vertical-align: middle;
+    height: 500px;
+    width: 300px;
+    background: #000;
+    font-size: 48px;
+    font-style: oblique;
+    color: #FFF;
+    text-align: center;
+    margin: 20px 5px;
+    padding: 35px;
+    display: table-cell;
+    vertical-align: middle;
+    word-wrap: break-word;
 }
 /* Utilities */
 
-section {
-    /*min-height: 90vh;*/
-}
-
-
-
-
-.navbar-header {
-    height: 7rem;
-}
-
-.nav-ion {
-    /*font-size: 3rem;*/
-}
-
 #header-row {
-    /*min-height: 90vh;*/  
-    margin-top: 3rem 
+    margin-top: 74px;
     overflow: hidden;
     background: url("../assets/hero.jpg");
     background-size: cover;
-    /*line-height: 100px;*/
 }
 
 /* Gallery Styling */
